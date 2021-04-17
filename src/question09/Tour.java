@@ -10,6 +10,7 @@ package question09;
  * @author Venkat Sai Jarugula
  */
 public class Tour {
+
     private String placeBeingVisited;
     private int numberOfTourists;
     private int numberOfDays;
@@ -25,8 +26,6 @@ public class Tour {
         this.foodExpensePerDay = foodExpenseePerDay;
         this.accomodationExpensePerDay = accomodationExpensePerDay;
     }
-    
-    
 
     public String getPlaceBeingVisited() {
         return placeBeingVisited;
@@ -54,15 +53,12 @@ public class Tour {
 
     @Override
     public String toString() {
-        return  "\nPlace being visited          :" + placeBeingVisited + 
-                "\nNumber of Tourists           :" + numberOfTourists + 
-                "\nNumber of Days               :" + numberOfDays +
-                "\nTravel Cost Per Day          :" + travelCostPerDay +
-                "\nFood Expense Per Day         :" + foodExpensePerDay + 
-                "\nAccomodation Expense Per Day :" + accomodationExpensePerDay ;
+        return "\nPlace being visited          :" + placeBeingVisited
+                + "\nNumber of Tourists           :" + numberOfTourists
+                + "\nNumber of Days               :" + numberOfDays
+                + "\nTravel Cost Per Day          :" + travelCostPerDay
+                + "\nFood Expense Per Day         :" + foodExpensePerDay
+                + "\nAccomodation Expense Per Day :" + accomodationExpensePerDay;
     }
-    
-    
-    
-    
+
 }

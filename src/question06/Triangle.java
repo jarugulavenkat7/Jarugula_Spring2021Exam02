@@ -10,6 +10,7 @@ package question06;
  * @author Venkat Sai Jarugula
  */
 public class Triangle extends GeometricObject {
+
     private double firstSide;
     private double secondSide;
     private double thirdSide;
@@ -21,53 +22,37 @@ public class Triangle extends GeometricObject {
         this.thirdSide = thirdSide;
     }
 
-   
-    
-
     public double getFirstSide() {
         return firstSide;
-    }
-
-    public void setFirstSide(double firstSide) {
-        this.firstSide = firstSide;
     }
 
     public double getSecondSide() {
         return secondSide;
     }
 
-    public void setSecondSide(double secondSide) {
-        this.secondSide = secondSide;
-    }
-
     public double getThirdSide() {
         return thirdSide;
     }
 
-    public void setThirdSide(double thirdSide) {
-        this.thirdSide = thirdSide;
-    }
-    
-
     @Override
     public double calculateArea() {
-        double s =(this.firstSide+this.secondSide+this.thirdSide)/2;
-        return Math.sqrt(s*(s-this.firstSide)*(s-this.secondSide)*(s-this.thirdSide));
+        double s = (this.firstSide + this.secondSide + this.thirdSide) / 2;
+        return Math.sqrt(s * (s - this.firstSide) * (s - this.secondSide) * (s - this.thirdSide));
     }
 
     @Override
     public double calculatePerimeter() {
-        return this.firstSide+this.secondSide+this.thirdSide;
+        return this.firstSide + this.secondSide + this.thirdSide;
     }
 
     @Override
     public String toString() {
-        return  "\n*************** Details of Triangle ***************"+
-                "\nArea of the Triangle      : "+ this.calculateArea()+
-                "\nPerimeter of the Triangle : "+ this.calculatePerimeter()+
-                "\nColor of the Triangle     : "+ this.getColor()+
-                "\nTriangle is filled        : "+ this.isIsfilled()+
-                "\n***************************************************";
+        return "\n*************** Details of Triangle ***************"
+                + "\nArea of the Triangle      : " + String.format("%.2f", this.calculateArea())
+                + "\nPerimeter of the Triangle : " + String.format("%.2f", this.calculatePerimeter())
+                + "\nColor of the Triangle     : " + this.getColor()
+                + "\nTriangle is filled        : " + this.isIsfilled()
+                + "\n***************************************************";
     }
-    
+
 }

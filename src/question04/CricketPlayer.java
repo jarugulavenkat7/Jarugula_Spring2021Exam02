@@ -10,16 +10,15 @@ package question04;
  * @author Venkat Sai Jarugula
  */
 public class CricketPlayer extends Player {
+
     private int numberOfRunsScored;
     private int numberOfWicketsTaken;
 
-    public CricketPlayer( String name, int age, double height, String role,int numberOfRunsScored, int numberOfWicketsTaken) {
+    public CricketPlayer(String name, int age, double height, String role, int numberOfRunsScored, int numberOfWicketsTaken) {
         super(name, age, height, role);
         this.numberOfRunsScored = numberOfRunsScored;
         this.numberOfWicketsTaken = numberOfWicketsTaken;
     }
-
-    
 
     public int getNumberOfRunsScored() {
         return numberOfRunsScored;
@@ -32,9 +31,8 @@ public class CricketPlayer extends Player {
     @Override
     public String toString() {
         return super.toString()
-                + "\nNumber Of Runs Scored=" + numberOfRunsScored 
+                + "\nNumber Of Runs Scored=" + numberOfRunsScored
                 + "\nNumber Of Wickets Taken=" + numberOfWicketsTaken;
     }
-    
-    
+
 }

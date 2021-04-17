@@ -10,9 +10,9 @@ package question07;
  * @author Venkat Sai Jarugula
  */
 public enum Biryani {
-    VEGTABLE_BIRYANI(5.8,8.2,10.5,13.0),EGG_BIRYANI(6.5,9,11.5,14.7),
-    CHICKEN_BIRYANI(10.0,13.0,16.5,20.7),MUTTON_BIRYANI(12.5,15.0,20.0,25.0);
-    private  double singlePackPrice;
+    VEGTABLE_BIRYANI(5.8, 8.2, 10.5, 13.0), EGG_BIRYANI(6.5, 9, 11.5, 14.7),
+    CHICKEN_BIRYANI(10.0, 13.0, 16.5, 20.7), MUTTON_BIRYANI(12.5, 15.0, 20.0, 25.0);
+    private double singlePackPrice;
     private double largePackPrice;
     private double familyPackPrice;
     private double JumboPackPrice;
@@ -39,5 +39,5 @@ public enum Biryani {
     public double getJumboPackPrice() {
         return JumboPackPrice;
     }
-        
+
 }

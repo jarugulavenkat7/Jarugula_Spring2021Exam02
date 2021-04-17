@@ -10,9 +10,10 @@ package question08;
  * @author Venkat Sai Jarugula
  */
 public class DieselEngine extends Engine {
+
     private double fuelInjectorCost;
 
-    public DieselEngine( double engineBlockCost, double pistonCost, double crankShaftCost, double camShaftCost, double valveCost,double fuelInjectorCost) {
+    public DieselEngine(double engineBlockCost, double pistonCost, double crankShaftCost, double camShaftCost, double valveCost, double fuelInjectorCost) {
         super(engineBlockCost, pistonCost, crankShaftCost, camShaftCost, valveCost);
         this.fuelInjectorCost = fuelInjectorCost;
     }
@@ -23,25 +24,16 @@ public class DieselEngine extends Engine {
 
     @Override
     public String toString() {
-         return super.toString()+
-                "\nFuel Injector Cost  : " + fuelInjectorCost + 
-                
-                "\n______________________________________"+
-                "\nTotal Cost          : " + this.calculateEngineCost()+
-                "\n______________________________________";
+        return super.toString()
+                + "\nFuel Injector Cost  : " + fuelInjectorCost
+                + "\n______________________________________"
+                + "\nTotal Cost          : " + this.calculateEngineCost()
+                + "\n______________________________________";
     }
 
     @Override
     public double calculateEngineCost() {
-       return this.getEngineBlockCost()+this.getPistonCost()+this.getCrankShaftCost()+this.getCamShaftCost()+this.getValveCost()+fuelInjectorCost;
+        return this.getEngineBlockCost() + this.getPistonCost() + this.getCrankShaftCost() + this.getCamShaftCost() + this.getValveCost() + fuelInjectorCost;
     }
 
-    
-    
-
-   
-    
-    
-    
-    
 }

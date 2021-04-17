@@ -11,15 +11,12 @@ package question08;
  */
 public class EngineDriver {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        PetrolEngine petrolEngine=new PetrolEngine(200,300,400, 500, 600, 700, 200);
+        System.out.println("Question:8 By Venkat Sai Jarugula");
+        PetrolEngine petrolEngine = new PetrolEngine(200, 300, 400, 500, 600, 700, 200);
         System.out.println(petrolEngine);
-        DieselEngine dieselEngine=new DieselEngine(200,300,400, 500, 600, 700);
+        DieselEngine dieselEngine = new DieselEngine(200, 300, 400, 500, 600, 700);
         System.out.println(dieselEngine);
-        
+
     }
-    
 }

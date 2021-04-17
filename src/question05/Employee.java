@@ -10,12 +10,13 @@ package question05;
  * @author Venkat Sai Jarugula
  */
 public class Employee extends Person {
+
     private String Office;
     private double salary;
     private String dateHired;
 
     public Employee(String name, String address, String phoneNumber,
-            String email,String Office, double salary, String dateHired) {
+            String email, String Office, double salary, String dateHired) {
         super(name, address, phoneNumber, email);
         this.Office = Office;
         this.salary = salary;
@@ -26,30 +27,18 @@ public class Employee extends Person {
         return Office;
     }
 
-    public void setOffice(String Office) {
-        this.Office = Office;
-    }
-
     public double getSalary() {
         return salary;
-    }
-
-    public void setSalary(double salary) {
-        this.salary = salary;
     }
 
     public String getDateHired() {
         return dateHired;
     }
 
-    public void setDateHired(String dateHired) {
-        this.dateHired = dateHired;
-    }
-
     @Override
     public String toString() {
-        return "Employee{" + "Office=" + Office + ", salary=" + salary + ", dateHired=" + dateHired + '}';
+        return "Class Name: Employee" + "     Person Name :" + super.getName()
+                + "\n************************************************";
     }
-    
-    
+
 }

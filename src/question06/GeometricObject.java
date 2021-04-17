@@ -10,6 +10,7 @@ package question06;
  * @author Venkat Sai Jarugula
  */
 public abstract class GeometricObject {
+
     private String color;
     private boolean isfilled;
 
@@ -22,22 +23,12 @@ public abstract class GeometricObject {
         return color;
     }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
     public boolean isIsfilled() {
         return isfilled;
     }
 
-    public void setIsfilled(boolean isfilled) {
-        this.isfilled = isfilled;
-    }
-    
-    
     public abstract double calculateArea();
-    
+
     public abstract double calculatePerimeter();
-    
-    
+
 }

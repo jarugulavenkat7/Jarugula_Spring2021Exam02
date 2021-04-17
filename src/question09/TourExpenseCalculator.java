@@ -10,8 +10,12 @@ package question09;
  * @author Venkat Sai Jarugula
  */
 public interface TourExpenseCalculator {
+
     double foodExpenseCalculator();
+
     double accomodationExpenseCalculator();
+
     double travelExpenseCalculator();
+
     double totalExpenseCalculator();
 }

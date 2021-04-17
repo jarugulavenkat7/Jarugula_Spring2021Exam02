@@ -11,16 +11,14 @@ package question04;
  */
 public class PlayerDriver {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        CricketPlayer cricketPlayer1=new CricketPlayer("M.S.Dhoni", 39,1.80,"WK-Batsman",10773 , 36);
+        System.out.println("Question:4 By Venkat Sai Jarugula");
+        CricketPlayer cricketPlayer1 = new CricketPlayer("M.S.Dhoni", 39, 1.80, "WK-Batsman", 10773, 36);
         System.out.println(cricketPlayer1);
-        FootBallPlayer footBallPlayer=new FootBallPlayer("Lionel Messi", 33, 1.70, "Forward", 705, 867);
+        FootBallPlayer footBallPlayer = new FootBallPlayer("Lionel Messi", 33, 1.70, "Forward", 705, 867);
         System.out.println(footBallPlayer);
-        Player player1=new CricketPlayer("Virat Kohli", 32,1.75,"Top-order batsman",12169 , 641);
+        Player player1 = new CricketPlayer("Virat Kohli", 32, 1.75, "Top-order batsman", 12169, 641);
         System.out.println(player1);
     }
-    
+
 }

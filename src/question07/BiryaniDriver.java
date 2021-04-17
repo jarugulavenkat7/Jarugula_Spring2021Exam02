@@ -11,21 +11,18 @@ package question07;
  */
 public class BiryaniDriver {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
+        System.out.println("Question:7 By Venkat Sai Jarugula");
         System.out.println("-----------------------------------------------------------");
         System.out.println(String.format("%-18s %-10s %-10s %-10s %-10s", "Types of Biryani", "Single", "Large", "Family", "Jumbo"));
         System.out.println("-----------------------------------------------------------");
         for (Biryani biryani : Biryani.values()) {
 
-            System.out.println(String.format("%-18s %-10s %-10s %-10s %-10s", biryani, "$"+biryani.getSinglePackPrice(),
-                    "$"+biryani.getLargePackPrice(),"$"+ biryani.getFamilyPackPrice(),"$"+ biryani.getJumboPackPrice()));
+            System.out.println(String.format("%-18s %-10s %-10s %-10s %-10s", biryani, "$" + biryani.getSinglePackPrice(),
+                    "$" + biryani.getLargePackPrice(), "$" + biryani.getFamilyPackPrice(), "$" + biryani.getJumboPackPrice()));
 
-            
         }
-System.out.println("-----------------------------------------------------------");
+        System.out.println("-----------------------------------------------------------");
     }
 
 }

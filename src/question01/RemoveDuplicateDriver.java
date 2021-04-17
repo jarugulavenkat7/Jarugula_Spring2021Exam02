@@ -14,32 +14,27 @@ import java.util.Scanner;
  */
 public class RemoveDuplicateDriver {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        Scanner scanner= new Scanner(System.in);
+        System.out.println("Question:1 By Venkat Sai Jarugula");
+        Scanner scanner = new Scanner(System.in);
         ArrayList<Integer> list = new ArrayList<>();
         System.out.print("Enter ten integers: ");
-        for (int i=0; i<10; i++) {
-                list.add(scanner.nextInt()); 
-         }
+        for (int i = 0; i < 10; i++) {
+            list.add(scanner.nextInt());
+        }
         removeDuplicate(list);
     }
-     public static void removeDuplicate(ArrayList<Integer> list){
-            ArrayList<Integer> listWithoutDuplicates = new ArrayList<>();
-             System.out.print("The distinct integers are ");
-            for (Integer listElement : list) {
-  
-            // If this element is not present in newList
-            // then add it
+
+    public static void removeDuplicate(ArrayList<Integer> list) {
+        ArrayList<Integer> listWithoutDuplicates = new ArrayList<>();
+        System.out.print("The distinct integers are ");
+        for (Integer listElement : list) {
             if (!listWithoutDuplicates.contains(listElement)) {
-  
+
                 listWithoutDuplicates.add(listElement);
-                System.out.print(listElement+" ");
+                System.out.print(listElement + " ");
             }
         }
-            System.out.println(" ");
-        }
-    
+        System.out.println(" ");
+    }
 }

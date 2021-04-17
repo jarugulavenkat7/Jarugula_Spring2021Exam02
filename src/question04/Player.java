@@ -10,6 +10,7 @@ package question04;
  * @author Venkat Sai Jarugula
  */
 public class Player {
+
     private String name;
     private int age;
     private double height;
@@ -19,7 +20,7 @@ public class Player {
         this.name = name;
         this.age = age;
         this.height = height;
-        this.role=role;
+        this.role = role;
     }
 
     public String getName() {
@@ -34,24 +35,19 @@ public class Player {
         return role;
     }
 
-    
-
     public double getHeight() {
         return height;
     }
 
     @Override
     public String toString() {
-        return  "\n****************************"+
-                "\n*******Player Details*******"+
-                "\n****************************"+
-                "\nname=" + name 
-                + "\nage=" + age 
-                + "\nrole=" + role 
-                + "\nheight=" + height 
-                ;
+        return "\n****************************"
+                + "\n*******Player Details*******"
+                + "\n****************************"
+                + "\nname=" + name
+                + "\nage=" + age
+                + "\nrole=" + role
+                + "\nheight=" + height;
     }
-    
-    
-    
+
 }

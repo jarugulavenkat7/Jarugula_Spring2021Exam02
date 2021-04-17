@@ -9,11 +9,12 @@ package question04;
  *
  * @author Venkat Sai Jarugula
  */
-public class FootBallPlayer  extends Player{
+public class FootBallPlayer extends Player {
+
     private int numberOfMatchesPlayed;
     private int numberOfGoals;
 
-    public FootBallPlayer( String name, int age, double height,String role,int numberOfMatchesPlayed, int numberOfGoals) {
+    public FootBallPlayer(String name, int age, double height, String role, int numberOfMatchesPlayed, int numberOfGoals) {
         super(name, age, height, role);
         this.numberOfMatchesPlayed = numberOfMatchesPlayed;
         this.numberOfGoals = numberOfGoals;
@@ -30,8 +31,8 @@ public class FootBallPlayer  extends Player{
     @Override
     public String toString() {
         return super.toString()
-                + "\nnumberOfMatchesPlayed=" + numberOfMatchesPlayed 
-                + "\nnumberOfGoals=" + numberOfGoals ;
+                + "\nnumberOfMatchesPlayed=" + numberOfMatchesPlayed
+                + "\nnumberOfGoals=" + numberOfGoals;
     }
-    
+
 }

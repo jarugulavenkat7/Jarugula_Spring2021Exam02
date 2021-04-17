@@ -10,6 +10,7 @@ package question08;
  * @author Venkat Sai Jarugula
  */
 public abstract class Engine {
+
     private double engineBlockCost;
     private double pistonCost;
     private double crankShaftCost;
@@ -43,18 +44,16 @@ public abstract class Engine {
     public double getValveCost() {
         return valveCost;
     }
-    
+
     public abstract double calculateEngineCost();
 
     @Override
     public String toString() {
-        return "\nEngineBlock Cost    : " + engineBlockCost +
-               "\nPistonCost          : " + pistonCost +
-               "\nCrankShaft Cost     : " + crankShaftCost + 
-               "\nCamShaft Cost       : " + camShaftCost +
-               "\nValve Cost          : " + valveCost ;
+        return "\nEngineBlock Cost    : " + engineBlockCost
+                + "\nPistonCost          : " + pistonCost
+                + "\nCrankShaft Cost     : " + crankShaftCost
+                + "\nCamShaft Cost       : " + camShaftCost
+                + "\nValve Cost          : " + valveCost;
     }
-    
-    
-    
+
 }
